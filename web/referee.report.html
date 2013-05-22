@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Code Purge Assitor - Referee Report</title>
+<link rel="stylesheet" type="text/css" href="../../cpa/web/lib/jquery/ui/css/blitzer/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../cpa/web/css/report.css" />
+<script type="text/javascript" src="../../cpa/web/lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../cpa/web/lib/jquery/ui/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../../cpa/web/js/cpa.js"></script>
+</head>
+
+<body>
+<div class="cpa">
+<div class="viewOperators">	
+  <div class="shownMethodHint">
+  	Hint: <span class="methodName">methodNameA</span>&nbsp;&nbsp;&nbsp;<span class="methodSurfix">4, 10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <span class="methodSurfix">4</span> - counter of file which invokes "methodNameA", <span class="methodSurfix">10</span> - times of invoking "methodNameA" )
+  </div>	
+  <a class="operateAll" href="javascript:;"></a>
+  <input id="onlyShowUnusedMethods" type="checkbox"/> <label for="onlyShowUnusedMethods">Only show unused methods</label>
+  <input id="onlyShowUsedMethods" type="checkbox"/> <label for="onlyShowUsedMethods">Only show used methods</label>
+</div>
+<ul class="info #RefereeType#">
+#RefereeInfoHtml#
+</ul>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	cpa.uiElementsEventInit();
+});
+</script>

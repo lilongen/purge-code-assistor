@@ -1,0 +1,122 @@
+/**
+ *CSS for expand/collapse UI dom
+ */
+.cpa {
+	background-color: #fcfcfc;
+	border: 1px solid #ddd;
+	font-family: Arial, Helvetica, Tahoma, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+.cpa .viewOperators {
+	border: 1px solid #eee;
+	padding: 6px 8px;
+	margin-bottom: 12px;
+	background-color: #eee;	
+}
+
+.cpa a {
+	color: #0066cc;
+}
+
+.cpa .shownMethodHint {
+	font-size: 13px;
+	margin-bottom: 12px;
+}
+ 
+.cpa ul {
+	text-align: left;
+	margin: 0;
+	margin: 0 0 0 0px;
+	padding: 0;
+	display: block;	
+}
+
+.cpa ul.info li {
+	margin: 0 0 0 28px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.cpa>ul>li>ul {
+	margin-bottom: 12px;
+}
+
+.cpa ul.hide {
+	display: none;	
+}
+
+.cpa .refereeName {
+	background-position: 3px 0px;
+	background-repeat: no-repeat;		
+	background-image: url('../img/class.gif');
+	padding-left: 24px;
+	color: #000;
+}
+
+.cpa .methodName {
+	font-size: 14px;
+	background-position: 3px 1px;
+	background-repeat: no-repeat;		
+	background-image: url('../img/function.gif');
+	padding-left: 24px;		
+}
+
+.cpa ul.info li.referer {
+	font-size: 14px;
+	background-position: 9px 4px;
+	background-repeat: no-repeat;		
+	background-image: url('../img/page.png');
+	padding-left: 24px;
+}
+
+.cpa .noReferer .methodName {
+	color: #aa0000;
+}
+
+.cpa .constructor .methodName {
+	font-style: normal;
+	color: #999;
+}
+
+.cpa .methodSurfix {
+	font-size: 11px;
+	font-style: italic;
+	color: #000099;
+}
+
+.cpa .methodInvokedCounterByReferer {
+	font-style: italic;
+	color: #999;
+}
+
+.cpa .refererName {
+	color: #999;
+}
+
+.cpa span.operator {
+	float: left;
+	width: 12px;
+	height: 1em;
+	background-position: 0 80%;
+	background-repeat: no-repeat;	
+}
+
+.cpa span.minus{
+	background-image: url('../img/minus.png');
+}
+
+.cpa span.plus{
+	background-image: url('../img/plus.png');
+}
+
+.cpa .fwspan {
+	display:-moz-inline-box;
+	display: inline-block;
+}
+
+.cpa #onlyShowUsedMethods,
+.cpa #onlyShowUnusedMethods {
+	margin-left: 24px;
+}
